@@ -1,0 +1,3 @@
+/data/NevoLabProjects/Testing_Dor/CellStudioSE/build/CMakeFiles/CellStudio.dir
+/data/NevoLabProjects/Testing_Dor/CellStudioSE/build/CMakeFiles/edit_cache.dir
+/data/NevoLabProjects/Testing_Dor/CellStudioSE/build/CMakeFiles/rebuild_cache.dir

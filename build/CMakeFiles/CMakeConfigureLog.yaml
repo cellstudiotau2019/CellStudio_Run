@@ -1,0 +1,597 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/modules/cmake-3.27.5/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      The system is: Linux - 5.4.0-84-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/modules/cmake-3.27.5/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/modules/cmake-3.27.5/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/modules/cmake-3.27.5/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/mpicc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /data/NevoLabProjects/Testing_Dor/CellStudioSE/build/CMakeFiles/3.27.20230918-g0846414/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/modules/cmake-3.27.5/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/modules/cmake-3.27.5/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/modules/cmake-3.27.5/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/mpic++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /data/NevoLabProjects/Testing_Dor/CellStudioSE/build/CMakeFiles/3.27.20230918-g0846414/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/modules/cmake-3.27.5/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/home/modules/cmake-3.27.5/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/data/NevoLabProjects/Testing_Dor/CellStudioSE/build/CMakeFiles/CMakeScratch/TryCompile-POygAa"
+      binary: "/data/NevoLabProjects/Testing_Dor/CellStudioSE/build/CMakeFiles/CMakeScratch/TryCompile-POygAa"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/data/NevoLabProjects/Testing_Dor/CellStudioSE/build/CMakeFiles/CMakeScratch/TryCompile-POygAa'
+        
+        Run Build Command(s): /home/modules/cmake-3.27.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_6ff61/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_6ff61.dir/build.make CMakeFiles/cmTC_6ff61.dir/build
+        make[1]: Entering directory '/data/NevoLabProjects/Testing_Dor/CellStudioSE/build/CMakeFiles/CMakeScratch/TryCompile-POygAa'
+        Building C object CMakeFiles/cmTC_6ff61.dir/CMakeCCompilerABI.c.o
+        /usr/bin/mpicc   -v -o CMakeFiles/cmTC_6ff61.dir/CMakeCCompilerABI.c.o -c /home/modules/cmake-3.27.5/share/cmake-3.27/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/home/modules/gcc-13.2.0/bin/gcc
+        Target: x86_64-pc-linux-gnu
+        Configured with: ./configure --prefix=/home/modules/gcc-13.2.0 --disable-multilib
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 13.2.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6ff61.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include' '-pthread' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6ff61.dir/'
+         /home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/cc1 -quiet -v -I /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -I /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent -I /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include -I /usr/lib/x86_64-linux-gnu/openmpi/include -imultiarch x86_64-linux-gnu -D_REENTRANT /home/modules/cmake-3.27.5/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_6ff61.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccGOj3Ia.s
+        GNU C17 (GCC) version 13.2.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 13.2.0, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi
+         /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent
+         /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include
+         /usr/lib/x86_64-linux-gnu/openmpi/include
+         /home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include
+         /usr/local/include
+         /home/modules/gcc-13.2.0/include
+         /home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed/x86_64-linux-gnu
+         /home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 9055a92be067adebd1624dd33df5cfc1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6ff61.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include' '-pthread' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6ff61.dir/'
+         as -v -I /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -I /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent -I /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include -I /usr/lib/x86_64-linux-gnu/openmpi/include --64 -o CMakeFiles/cmTC_6ff61.dir/CMakeCCompilerABI.c.o /tmp/ccGOj3Ia.s
+        GNU assembler version 2.30 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.30
+        COMPILER_PATH=/home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/home/modules/gcc-13.2.0/lib64/../lib64/:/home/modules/gcc-13.2.0/lib/../lib64/:/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/home/modules/gcc-13.2.0/lib64/:/home/modules/gcc-13.2.0/lib/:/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6ff61.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include' '-pthread' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6ff61.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_6ff61
+        /home/modules/cmake-3.27.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6ff61.dir/link.txt --verbose=1
+        /usr/bin/mpicc  -v CMakeFiles/cmTC_6ff61.dir/CMakeCCompilerABI.c.o -o cmTC_6ff61 
+        Using built-in specs.
+        COLLECT_GCC=/home/modules/gcc-13.2.0/bin/gcc
+        COLLECT_LTO_WRAPPER=/home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: ./configure --prefix=/home/modules/gcc-13.2.0 --disable-multilib
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 13.2.0 (GCC) 
+        COMPILER_PATH=/home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/home/modules/gcc-13.2.0/lib64/../lib64/:/home/modules/gcc-13.2.0/lib/../lib64/:/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/home/modules/gcc-13.2.0/lib64/:/home/modules/gcc-13.2.0/lib/:/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6ff61' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include' '-pthread' '-L/usr//lib' '-L/usr/lib/x86_64-linux-gnu/openmpi/lib' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_6ff61.'
+         /home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/collect2 -plugin /home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/liblto_plugin.so -plugin-opt=/home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccNOk9af.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_6ff61 /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o -L/usr//lib -L/usr/lib/x86_64-linux-gnu/openmpi/lib -L/home/modules/gcc-13.2.0/lib64/../lib64 -L/home/modules/gcc-13.2.0/lib/../lib64 -L/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0 -L/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/home/modules/gcc-13.2.0/lib64 -L/home/modules/gcc-13.2.0/lib -L/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../.. CMakeFiles/cmTC_6ff61.dir/CMakeCCompilerABI.c.o -lmpi -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6ff61' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include' '-pthread' '-L/usr//lib' '-L/usr/lib/x86_64-linux-gnu/openmpi/lib' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_6ff61.'
+        make[1]: Leaving directory '/data/NevoLabProjects/Testing_Dor/CellStudioSE/build/CMakeFiles/CMakeScratch/TryCompile-POygAa'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/modules/cmake-3.27.5/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/home/modules/cmake-3.27.5/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi]
+          add: [/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent]
+          add: [/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include]
+          add: [/usr/lib/x86_64-linux-gnu/openmpi/include]
+          add: [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include]
+          add: [/usr/local/include]
+          add: [/home/modules/gcc-13.2.0/include]
+          add: [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed/x86_64-linux-gnu]
+          add: [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi] ==> [/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi]
+        collapse include dir [/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent] ==> [/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent]
+        collapse include dir [/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include] ==> [/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include]
+        collapse include dir [/usr/lib/x86_64-linux-gnu/openmpi/include] ==> [/usr/lib/x86_64-linux-gnu/openmpi/include]
+        collapse include dir [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include] ==> [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/home/modules/gcc-13.2.0/include] ==> [/home/modules/gcc-13.2.0/include]
+        collapse include dir [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed/x86_64-linux-gnu] ==> [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed/x86_64-linux-gnu]
+        collapse include dir [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed] ==> [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi;/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent;/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include;/usr/lib/x86_64-linux-gnu/openmpi/include;/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include;/usr/local/include;/home/modules/gcc-13.2.0/include;/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed/x86_64-linux-gnu;/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/modules/cmake-3.27.5/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/home/modules/cmake-3.27.5/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/data/NevoLabProjects/Testing_Dor/CellStudioSE/build/CMakeFiles/CMakeScratch/TryCompile-POygAa']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/modules/cmake-3.27.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_6ff61/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_6ff61.dir/build.make CMakeFiles/cmTC_6ff61.dir/build]
+        ignore line: [make[1]: Entering directory '/data/NevoLabProjects/Testing_Dor/CellStudioSE/build/CMakeFiles/CMakeScratch/TryCompile-POygAa']
+        ignore line: [Building C object CMakeFiles/cmTC_6ff61.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/mpicc   -v -o CMakeFiles/cmTC_6ff61.dir/CMakeCCompilerABI.c.o -c /home/modules/cmake-3.27.5/share/cmake-3.27/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/modules/gcc-13.2.0/bin/gcc]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ./configure --prefix=/home/modules/gcc-13.2.0 --disable-multilib]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.2.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6ff61.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include' '-pthread' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6ff61.dir/']
+        ignore line: [ /home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/cc1 -quiet -v -I /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -I /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent -I /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include -I /usr/lib/x86_64-linux-gnu/openmpi/include -imultiarch x86_64-linux-gnu -D_REENTRANT /home/modules/cmake-3.27.5/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_6ff61.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccGOj3Ia.s]
+        ignore line: [GNU C17 (GCC) version 13.2.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.2.0  GMP version 6.1.2  MPFR version 4.0.1  MPC version 1.1.0  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi]
+        ignore line: [ /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent]
+        ignore line: [ /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include]
+        ignore line: [ /usr/lib/x86_64-linux-gnu/openmpi/include]
+        ignore line: [ /home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /home/modules/gcc-13.2.0/include]
+        ignore line: [ /home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed/x86_64-linux-gnu]
+        ignore line: [ /home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 9055a92be067adebd1624dd33df5cfc1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6ff61.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include' '-pthread' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6ff61.dir/']
+        ignore line: [ as -v -I /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -I /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent -I /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include -I /usr/lib/x86_64-linux-gnu/openmpi/include --64 -o CMakeFiles/cmTC_6ff61.dir/CMakeCCompilerABI.c.o /tmp/ccGOj3Ia.s]
+        ignore line: [GNU assembler version 2.30 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.30]
+        ignore line: [COMPILER_PATH=/home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/home/modules/gcc-13.2.0/lib64/../lib64/:/home/modules/gcc-13.2.0/lib/../lib64/:/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/home/modules/gcc-13.2.0/lib64/:/home/modules/gcc-13.2.0/lib/:/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6ff61.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include' '-pthread' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6ff61.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_6ff61]
+        ignore line: [/home/modules/cmake-3.27.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6ff61.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/mpicc  -v CMakeFiles/cmTC_6ff61.dir/CMakeCCompilerABI.c.o -o cmTC_6ff61 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/modules/gcc-13.2.0/bin/gcc]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ./configure --prefix=/home/modules/gcc-13.2.0 --disable-multilib]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.2.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/home/modules/gcc-13.2.0/lib64/../lib64/:/home/modules/gcc-13.2.0/lib/../lib64/:/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/home/modules/gcc-13.2.0/lib64/:/home/modules/gcc-13.2.0/lib/:/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6ff61' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include' '-pthread' '-L/usr//lib' '-L/usr/lib/x86_64-linux-gnu/openmpi/lib' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_6ff61.']
+        link line: [ /home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/collect2 -plugin /home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/liblto_plugin.so -plugin-opt=/home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccNOk9af.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_6ff61 /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o -L/usr//lib -L/usr/lib/x86_64-linux-gnu/openmpi/lib -L/home/modules/gcc-13.2.0/lib64/../lib64 -L/home/modules/gcc-13.2.0/lib/../lib64 -L/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0 -L/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/home/modules/gcc-13.2.0/lib64 -L/home/modules/gcc-13.2.0/lib -L/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../.. CMakeFiles/cmTC_6ff61.dir/CMakeCCompilerABI.c.o -lmpi -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o]
+          arg [/home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccNOk9af.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_6ff61] ==> ignore
+          arg [/usr/lib/x86_64-linux-gnu/crt1.o] ==> obj [/usr/lib/x86_64-linux-gnu/crt1.o]
+          arg [/usr/lib/x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/x86_64-linux-gnu/crti.o]
+          arg [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o] ==> obj [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o]
+          arg [-L/usr//lib] ==> dir [/usr//lib]
+          arg [-L/usr/lib/x86_64-linux-gnu/openmpi/lib] ==> dir [/usr/lib/x86_64-linux-gnu/openmpi/lib]
+          arg [-L/home/modules/gcc-13.2.0/lib64/../lib64] ==> dir [/home/modules/gcc-13.2.0/lib64/../lib64]
+          arg [-L/home/modules/gcc-13.2.0/lib/../lib64] ==> dir [/home/modules/gcc-13.2.0/lib/../lib64]
+          arg [-L/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0] ==> dir [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0]
+          arg [-L/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64] ==> dir [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/home/modules/gcc-13.2.0/lib64] ==> dir [/home/modules/gcc-13.2.0/lib64]
+          arg [-L/home/modules/gcc-13.2.0/lib] ==> dir [/home/modules/gcc-13.2.0/lib]
+          arg [-L/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../..] ==> dir [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../..]
+          arg [CMakeFiles/cmTC_6ff61.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lmpi] ==> lib [mpi]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o] ==> obj [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o]
+          arg [/usr/lib/x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr//lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu/openmpi/lib] ==> [/usr/lib/x86_64-linux-gnu/openmpi/lib]
+        collapse library dir [/home/modules/gcc-13.2.0/lib64/../lib64] ==> [/home/modules/gcc-13.2.0/lib64]
+        collapse library dir [/home/modules/gcc-13.2.0/lib/../lib64] ==> [/home/modules/gcc-13.2.0/lib64]
+        collapse library dir [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0] ==> [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0]
+        collapse library dir [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64] ==> [/home/modules/gcc-13.2.0/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/home/modules/gcc-13.2.0/lib64] ==> [/home/modules/gcc-13.2.0/lib64]
+        collapse library dir [/home/modules/gcc-13.2.0/lib] ==> [/home/modules/gcc-13.2.0/lib]
+        collapse library dir [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../..] ==> [/home/modules/gcc-13.2.0/lib]
+        implicit libs: [mpi;gcc;gcc_s;pthread;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/crt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o;/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib;/usr/lib/x86_64-linux-gnu/openmpi/lib;/home/modules/gcc-13.2.0/lib64;/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/home/modules/gcc-13.2.0/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/modules/cmake-3.27.5/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/home/modules/cmake-3.27.5/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/data/NevoLabProjects/Testing_Dor/CellStudioSE/build/CMakeFiles/CMakeScratch/TryCompile-75aYz9"
+      binary: "/data/NevoLabProjects/Testing_Dor/CellStudioSE/build/CMakeFiles/CMakeScratch/TryCompile-75aYz9"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/data/NevoLabProjects/Testing_Dor/CellStudioSE/build/CMakeFiles/CMakeScratch/TryCompile-75aYz9'
+        
+        Run Build Command(s): /home/modules/cmake-3.27.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7e7eb/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_7e7eb.dir/build.make CMakeFiles/cmTC_7e7eb.dir/build
+        make[1]: Entering directory '/data/NevoLabProjects/Testing_Dor/CellStudioSE/build/CMakeFiles/CMakeScratch/TryCompile-75aYz9'
+        Building CXX object CMakeFiles/cmTC_7e7eb.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/mpic++   -v -o CMakeFiles/cmTC_7e7eb.dir/CMakeCXXCompilerABI.cpp.o -c /home/modules/cmake-3.27.5/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/home/modules/gcc-13.2.0/bin/g++
+        Target: x86_64-pc-linux-gnu
+        Configured with: ./configure --prefix=/home/modules/gcc-13.2.0 --disable-multilib
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 13.2.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7e7eb.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include' '-pthread' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7e7eb.dir/'
+         /home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/cc1plus -quiet -v -I /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -I /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent -I /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include -I /usr/lib/x86_64-linux-gnu/openmpi/include -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D_REENTRANT /home/modules/cmake-3.27.5/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_7e7eb.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccUO02Ys.s
+        GNU C++17 (GCC) version 13.2.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 13.2.0, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi
+         /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent
+         /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include
+         /usr/lib/x86_64-linux-gnu/openmpi/include
+         /home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0
+         /home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0/x86_64-pc-linux-gnu
+         /home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0/backward
+         /home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include
+         /usr/local/include
+         /home/modules/gcc-13.2.0/include
+         /home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed/x86_64-linux-gnu
+         /home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 5cc61ed02b98ec28eb7de6f8ef3f8699
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7e7eb.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include' '-pthread' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7e7eb.dir/'
+         as -v -I /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -I /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent -I /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include -I /usr/lib/x86_64-linux-gnu/openmpi/include --64 -o CMakeFiles/cmTC_7e7eb.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccUO02Ys.s
+        GNU assembler version 2.30 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.30
+        COMPILER_PATH=/home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/home/modules/gcc-13.2.0/lib64/../lib64/:/home/modules/gcc-13.2.0/lib/../lib64/:/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/home/modules/gcc-13.2.0/lib64/:/home/modules/gcc-13.2.0/lib/:/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7e7eb.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include' '-pthread' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7e7eb.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_7e7eb
+        /home/modules/cmake-3.27.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7e7eb.dir/link.txt --verbose=1
+        /usr/bin/mpic++  -v CMakeFiles/cmTC_7e7eb.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_7e7eb 
+        Using built-in specs.
+        COLLECT_GCC=/home/modules/gcc-13.2.0/bin/g++
+        COLLECT_LTO_WRAPPER=/home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: ./configure --prefix=/home/modules/gcc-13.2.0 --disable-multilib
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 13.2.0 (GCC) 
+        COMPILER_PATH=/home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/home/modules/gcc-13.2.0/lib64/../lib64/:/home/modules/gcc-13.2.0/lib/../lib64/:/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/home/modules/gcc-13.2.0/lib64/:/home/modules/gcc-13.2.0/lib/:/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7e7eb' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include' '-pthread' '-L/usr//lib' '-L/usr/lib/x86_64-linux-gnu/openmpi/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7e7eb.'
+         /home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/collect2 -plugin /home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/liblto_plugin.so -plugin-opt=/home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc87uRkx.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_7e7eb /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o -L/usr//lib -L/usr/lib/x86_64-linux-gnu/openmpi/lib -L/home/modules/gcc-13.2.0/lib64/../lib64 -L/home/modules/gcc-13.2.0/lib/../lib64 -L/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0 -L/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/home/modules/gcc-13.2.0/lib64 -L/home/modules/gcc-13.2.0/lib -L/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../.. CMakeFiles/cmTC_7e7eb.dir/CMakeCXXCompilerABI.cpp.o -lmpi_cxx -lmpi -lstdc++ -lm -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7e7eb' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include' '-pthread' '-L/usr//lib' '-L/usr/lib/x86_64-linux-gnu/openmpi/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7e7eb.'
+        make[1]: Leaving directory '/data/NevoLabProjects/Testing_Dor/CellStudioSE/build/CMakeFiles/CMakeScratch/TryCompile-75aYz9'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/modules/cmake-3.27.5/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/home/modules/cmake-3.27.5/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi]
+          add: [/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent]
+          add: [/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include]
+          add: [/usr/lib/x86_64-linux-gnu/openmpi/include]
+          add: [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0]
+          add: [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0/x86_64-pc-linux-gnu]
+          add: [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0/backward]
+          add: [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include]
+          add: [/usr/local/include]
+          add: [/home/modules/gcc-13.2.0/include]
+          add: [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed/x86_64-linux-gnu]
+          add: [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi] ==> [/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi]
+        collapse include dir [/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent] ==> [/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent]
+        collapse include dir [/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include] ==> [/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include]
+        collapse include dir [/usr/lib/x86_64-linux-gnu/openmpi/include] ==> [/usr/lib/x86_64-linux-gnu/openmpi/include]
+        collapse include dir [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0] ==> [/home/modules/gcc-13.2.0/include/c++/13.2.0]
+        collapse include dir [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0/x86_64-pc-linux-gnu] ==> [/home/modules/gcc-13.2.0/include/c++/13.2.0/x86_64-pc-linux-gnu]
+        collapse include dir [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0/backward] ==> [/home/modules/gcc-13.2.0/include/c++/13.2.0/backward]
+        collapse include dir [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include] ==> [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/home/modules/gcc-13.2.0/include] ==> [/home/modules/gcc-13.2.0/include]
+        collapse include dir [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed/x86_64-linux-gnu] ==> [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed/x86_64-linux-gnu]
+        collapse include dir [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed] ==> [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi;/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent;/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include;/usr/lib/x86_64-linux-gnu/openmpi/include;/home/modules/gcc-13.2.0/include/c++/13.2.0;/home/modules/gcc-13.2.0/include/c++/13.2.0/x86_64-pc-linux-gnu;/home/modules/gcc-13.2.0/include/c++/13.2.0/backward;/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include;/usr/local/include;/home/modules/gcc-13.2.0/include;/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed/x86_64-linux-gnu;/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/modules/cmake-3.27.5/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/home/modules/cmake-3.27.5/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/data/NevoLabProjects/Testing_Dor/CellStudioSE/build/CMakeFiles/CMakeScratch/TryCompile-75aYz9']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/modules/cmake-3.27.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7e7eb/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_7e7eb.dir/build.make CMakeFiles/cmTC_7e7eb.dir/build]
+        ignore line: [make[1]: Entering directory '/data/NevoLabProjects/Testing_Dor/CellStudioSE/build/CMakeFiles/CMakeScratch/TryCompile-75aYz9']
+        ignore line: [Building CXX object CMakeFiles/cmTC_7e7eb.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/mpic++   -v -o CMakeFiles/cmTC_7e7eb.dir/CMakeCXXCompilerABI.cpp.o -c /home/modules/cmake-3.27.5/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/modules/gcc-13.2.0/bin/g++]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ./configure --prefix=/home/modules/gcc-13.2.0 --disable-multilib]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.2.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7e7eb.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include' '-pthread' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7e7eb.dir/']
+        ignore line: [ /home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/cc1plus -quiet -v -I /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -I /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent -I /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include -I /usr/lib/x86_64-linux-gnu/openmpi/include -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D_REENTRANT /home/modules/cmake-3.27.5/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_7e7eb.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccUO02Ys.s]
+        ignore line: [GNU C++17 (GCC) version 13.2.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.2.0  GMP version 6.1.2  MPFR version 4.0.1  MPC version 1.1.0  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi]
+        ignore line: [ /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent]
+        ignore line: [ /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include]
+        ignore line: [ /usr/lib/x86_64-linux-gnu/openmpi/include]
+        ignore line: [ /home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0]
+        ignore line: [ /home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0/x86_64-pc-linux-gnu]
+        ignore line: [ /home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0/backward]
+        ignore line: [ /home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /home/modules/gcc-13.2.0/include]
+        ignore line: [ /home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed/x86_64-linux-gnu]
+        ignore line: [ /home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 5cc61ed02b98ec28eb7de6f8ef3f8699]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7e7eb.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include' '-pthread' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7e7eb.dir/']
+        ignore line: [ as -v -I /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -I /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent -I /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include -I /usr/lib/x86_64-linux-gnu/openmpi/include --64 -o CMakeFiles/cmTC_7e7eb.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccUO02Ys.s]
+        ignore line: [GNU assembler version 2.30 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.30]
+        ignore line: [COMPILER_PATH=/home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/home/modules/gcc-13.2.0/lib64/../lib64/:/home/modules/gcc-13.2.0/lib/../lib64/:/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/home/modules/gcc-13.2.0/lib64/:/home/modules/gcc-13.2.0/lib/:/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7e7eb.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include' '-pthread' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7e7eb.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_7e7eb]
+        ignore line: [/home/modules/cmake-3.27.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7e7eb.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/mpic++  -v CMakeFiles/cmTC_7e7eb.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_7e7eb ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/modules/gcc-13.2.0/bin/g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ./configure --prefix=/home/modules/gcc-13.2.0 --disable-multilib]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.2.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/home/modules/gcc-13.2.0/lib64/../lib64/:/home/modules/gcc-13.2.0/lib/../lib64/:/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/home/modules/gcc-13.2.0/lib64/:/home/modules/gcc-13.2.0/lib/:/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7e7eb' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include' '-pthread' '-L/usr//lib' '-L/usr/lib/x86_64-linux-gnu/openmpi/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7e7eb.']
+        link line: [ /home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/collect2 -plugin /home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/liblto_plugin.so -plugin-opt=/home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc87uRkx.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_7e7eb /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o -L/usr//lib -L/usr/lib/x86_64-linux-gnu/openmpi/lib -L/home/modules/gcc-13.2.0/lib64/../lib64 -L/home/modules/gcc-13.2.0/lib/../lib64 -L/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0 -L/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/home/modules/gcc-13.2.0/lib64 -L/home/modules/gcc-13.2.0/lib -L/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../.. CMakeFiles/cmTC_7e7eb.dir/CMakeCXXCompilerABI.cpp.o -lmpi_cxx -lmpi -lstdc++ -lm -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o]
+          arg [/home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/modules/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc87uRkx.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_7e7eb] ==> ignore
+          arg [/usr/lib/x86_64-linux-gnu/crt1.o] ==> obj [/usr/lib/x86_64-linux-gnu/crt1.o]
+          arg [/usr/lib/x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/x86_64-linux-gnu/crti.o]
+          arg [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o] ==> obj [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o]
+          arg [-L/usr//lib] ==> dir [/usr//lib]
+          arg [-L/usr/lib/x86_64-linux-gnu/openmpi/lib] ==> dir [/usr/lib/x86_64-linux-gnu/openmpi/lib]
+          arg [-L/home/modules/gcc-13.2.0/lib64/../lib64] ==> dir [/home/modules/gcc-13.2.0/lib64/../lib64]
+          arg [-L/home/modules/gcc-13.2.0/lib/../lib64] ==> dir [/home/modules/gcc-13.2.0/lib/../lib64]
+          arg [-L/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0] ==> dir [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0]
+          arg [-L/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64] ==> dir [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/home/modules/gcc-13.2.0/lib64] ==> dir [/home/modules/gcc-13.2.0/lib64]
+          arg [-L/home/modules/gcc-13.2.0/lib] ==> dir [/home/modules/gcc-13.2.0/lib]
+          arg [-L/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../..] ==> dir [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../..]
+          arg [CMakeFiles/cmTC_7e7eb.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lmpi_cxx] ==> lib [mpi_cxx]
+          arg [-lmpi] ==> lib [mpi]
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o] ==> obj [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o]
+          arg [/usr/lib/x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr//lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu/openmpi/lib] ==> [/usr/lib/x86_64-linux-gnu/openmpi/lib]
+        collapse library dir [/home/modules/gcc-13.2.0/lib64/../lib64] ==> [/home/modules/gcc-13.2.0/lib64]
+        collapse library dir [/home/modules/gcc-13.2.0/lib/../lib64] ==> [/home/modules/gcc-13.2.0/lib64]
+        collapse library dir [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0] ==> [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0]
+        collapse library dir [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64] ==> [/home/modules/gcc-13.2.0/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/home/modules/gcc-13.2.0/lib64] ==> [/home/modules/gcc-13.2.0/lib64]
+        collapse library dir [/home/modules/gcc-13.2.0/lib] ==> [/home/modules/gcc-13.2.0/lib]
+        collapse library dir [/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../..] ==> [/home/modules/gcc-13.2.0/lib]
+        implicit libs: [mpi_cxx;mpi;stdc++;m;gcc_s;gcc;pthread;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/crt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o;/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib;/usr/lib/x86_64-linux-gnu/openmpi/lib;/home/modules/gcc-13.2.0/lib64;/home/modules/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/home/modules/gcc-13.2.0/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/modules/cmake-3.27.5/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/modules/cmake-3.27.5/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/home/modules/cmake-3.27.5/share/cmake-3.27/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/home/modules/cmake-3.27.5/share/cmake-3.27/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/home/modules/cmake-3.27.5/share/cmake-3.27/Modules/FindBoost.cmake:2143 (find_package)"
+      - "CMakeLists.txt:55 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/data/NevoLabProjects/Testing_Dor/CellStudioSE/build/CMakeFiles/CMakeScratch/TryCompile-xt2ry9"
+      binary: "/data/NevoLabProjects/Testing_Dor/CellStudioSE/build/CMakeFiles/CMakeScratch/TryCompile-xt2ry9"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/data/NevoLabProjects/Testing_Dor/CellStudioSE/build/CMakeFiles/CMakeScratch/TryCompile-xt2ry9'
+        
+        Run Build Command(s): /home/modules/cmake-3.27.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ac56c/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_ac56c.dir/build.make CMakeFiles/cmTC_ac56c.dir/build
+        make[1]: Entering directory '/data/NevoLabProjects/Testing_Dor/CellStudioSE/build/CMakeFiles/CMakeScratch/TryCompile-xt2ry9'
+        Building C object CMakeFiles/cmTC_ac56c.dir/src.c.o
+        /usr/bin/mpicc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_ac56c.dir/src.c.o -c /data/NevoLabProjects/Testing_Dor/CellStudioSE/build/CMakeFiles/CMakeScratch/TryCompile-xt2ry9/src.c
+        Linking C executable cmTC_ac56c
+        /home/modules/cmake-3.27.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ac56c.dir/link.txt --verbose=1
+        /usr/bin/mpicc CMakeFiles/cmTC_ac56c.dir/src.c.o -o cmTC_ac56c 
+        make[1]: Leaving directory '/data/NevoLabProjects/Testing_Dor/CellStudioSE/build/CMakeFiles/CMakeScratch/TryCompile-xt2ry9'
+        
+      exitCode: 0
+...

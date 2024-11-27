@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Experiment_Info>
+    <Path>
+        <Input>Input</Input>
+        <Output>Output</Output>
+        <FileName>ExampleReduced_SV.xml</FileName>
+    </Path>
+    <Flag>
+        <USE_GRAPHIC>FALSE</USE_GRAPHIC>
+    </Flag>
+</Experiment_Info>
