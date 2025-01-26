@@ -1,0 +1,45 @@
+==1671390== Memcheck, a memory error detector
+==1671390== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1671390== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1671390== Command: ./build/CellStudio ./build/Input/ExampleReduced_SV.xml
+==1671390== Parent PID: 1671389
+==1671390== 
+==1671390== Thread 18:
+==1671390== Use of uninitialised value of size 8
+==1671390==    at 0x4240F5: MoleculeManager::getMoleculeLevel(unsigned short, glm::vec<3, float, (glm::qualifier)0>, bool, bool) (in /home/noodletech/Projects/CellStudio_BlackBox/CellStudio_Run/build/CellStudio)
+==1671390==    by 0x4245C4: MoleculeManager::getAverageMoleculeValue(unsigned short, glm::vec<3, float, (glm::qualifier)0>, float, bool, bool) (in /home/noodletech/Projects/CellStudio_BlackBox/CellStudio_Run/build/CellStudio)
+==1671390==    by 0x4131F4: Monocyte::updateOnBase(float) (in /home/noodletech/Projects/CellStudio_BlackBox/CellStudio_Run/build/CellStudio)
+==1671390==    by 0x4135EC: Monocyte::update() (in /home/noodletech/Projects/CellStudio_BlackBox/CellStudio_Run/build/CellStudio)
+==1671390==    by 0x433FEB: Region::evaluateInternalStateThread(void*, int) (in /home/noodletech/Projects/CellStudio_BlackBox/CellStudio_Run/build/CellStudio)
+==1671390==    by 0x51DA4F2: execute_native_thread_routine (thread.cc:104)
+==1671390==    by 0x53E9AC2: start_thread (pthread_create.c:442)
+==1671390==    by 0x547AA03: clone (clone.S:100)
+==1671390== 
+==1671390== 
+==1671390== Process terminating with default action of signal 2 (SIGINT)
+==1671390==    at 0x53E6117: __futex_abstimed_wait_common64 (futex-internal.c:57)
+==1671390==    by 0x53E6117: __futex_abstimed_wait_common (futex-internal.c:87)
+==1671390==    by 0x53E6117: __futex_abstimed_wait_cancelable64 (futex-internal.c:139)
+==1671390==    by 0x53EB623: __pthread_clockjoin_ex (pthread_join_common.c:105)
+==1671390==    by 0x51DA566: __gthread_join (gthr-default.h:669)
+==1671390==    by 0x51DA566: std::thread::join() (thread.cc:134)
+==1671390==    by 0x53EEEE7: __pthread_once_slow (pthread_once.c:116)
+==1671390==    by 0x416925: std::__future_base::_Async_state_commonV2::_M_complete_async() (in /home/noodletech/Projects/CellStudio_BlackBox/CellStudio_Run/build/CellStudio)
+==1671390==    by 0x417ADB: std::__basic_future<void>::wait() const (in /home/noodletech/Projects/CellStudio_BlackBox/CellStudio_Run/build/CellStudio)
+==1671390==    by 0x409E5A: main (in /home/noodletech/Projects/CellStudio_BlackBox/CellStudio_Run/build/CellStudio)
+==1671390== 
+==1671390== HEAP SUMMARY:
+==1671390==     in use at exit: 49,892,931 bytes in 114,121 blocks
+==1671390==   total heap usage: 1,163,339 allocs, 1,049,218 frees, 77,770,606 bytes allocated
+==1671390== 
+==1671390== LEAK SUMMARY:
+==1671390==    definitely lost: 416 bytes in 22 blocks
+==1671390==    indirectly lost: 96 bytes in 4 blocks
+==1671390==      possibly lost: 39,331 bytes in 22 blocks
+==1671390==    still reachable: 49,853,088 bytes in 114,073 blocks
+==1671390==         suppressed: 0 bytes in 0 blocks
+==1671390== Rerun with --leak-check=full to see details of leaked memory
+==1671390== 
+==1671390== Use --track-origins=yes to see where uninitialised values come from
+==1671390== For lists of detected and suppressed errors, rerun with: -s
+==1671390== ERROR SUMMARY: 7349 errors from 1 contexts (suppressed: 0 from 0)
